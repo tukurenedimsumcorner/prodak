@@ -1,437 +1,441 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en">
   <head>
-    <script src="../assets/js/color-modes.js"></script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
-    <meta name="generator" content="Hugo 0.122.0" />
-    <title>TUKU RENE DIMSUM CORNER</title>
+    <title>Tuku Rene Dimsum Corner</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
-
-    <!-- LINK UNTUK KONEKSI KE GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <!-- AOS -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-     
-      <!-- css bootstrap -->
+    <!-- LINK UNTUK KONEKSI KE BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!-- icon bootstrap -->
+    <!-- LINK UNTUK KONEKSI KE GOOGLE FONT  -->
+     <!-- balsamiq sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- SIPLY COUNTDOWN -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <!-- ICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- BODY -->
   <body>
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
+    <!-- HERO -->
+    <section id="hero" class="hero w-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h2>Hallo <span></span> Selamat Datang Di</h2>
+        <h1>TUKU RENE DIMSUM CORNER</h1>
+        <h2>"Nikmati Kelezatan Dimsum Terbaik di Tuku Rene Dimsum Corner!"
+          Hidangan dimsum kukus, bakar, goreng, hingga frozen yang siap memanjakan lidah Anda. Pesan sekarang dan rasakan cita rasa istimewa kami!</2>
+        <h2> </h2>
+        <!-- <div class="simply-countdown"></div> -->
+        <a href="#prodak" class="btn btn-lg mt-4" onClick="enableScroll()">Yuk Liat Prodak Kami</a>
+      </main>
+    </section>
 
     <!-- NAVBAR -->
-    
-    <nav class="navbar navbar-expand-md bg-light sticky-top border-bottom" data-bs-theme="light">
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand d-md-none" href="#">
-          <svg class="bi" width="24" height="24"><use xlink:href="#aperture" /></svg>
-          Tuku Rene Dimsum Corner
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <img src="aset/LOGO.jpeg" alt="" class="navbar-brand" style="height: 100px;">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Tuku Rene Dimsum Corner</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="aset/LOGO.jpeg" alt="" style="height: 100px;"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 justify-content-between align-items-center navbar-expand-md">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img src="aset/LOGO.jpeg" alt="" style="height: 8vh" />
-                  <!-- <svg class="bi" width="24" height="24"><use xlink:href="#aperture" /></svg> -->
-                </a>
+            <div class="offcanvas-body ms-auto">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#prodak">prodak</a>
+                <a class="nav-link" href="#pemesanan">Pemesanan</a>
+                <a class="nav-link" href="#testimoni">Testimoni</a>
+                <a class="nav-link" href="#info">Info</a>
+                <a class="nav-link" href="#kritik">kritik dan saran</a>
+                <a class="nav-link" href="#gifts"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+   
+
+    <!--prodak -->
+    <section id="prodak" class="prodak" style="padding-top: 80px;">
+      <!-- opening -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>PRODAK</h2>
+            <h3>Tuku Rene Dimsum Corner menghadirkan beragam pilihan dimsum berkualitas yang menggugah selera. </h3>
+            <p>Nikmati dimsum kukus yang lembut, dimsum bakar dengan aroma khas, dimsum saus mentai yang creamy, hingga dimsum goreng yang renyah. Untuk kenyamanan Anda, kami juga menyediakan dimsum frozen yang praktis, cocok untuk dinikmati kapan saja atau dijual kembali oleh reseller. Semua produk kami dibuat dengan bahan pilihan untuk memastikan kelezatan di setiap gigitan.</p>
+          </div>
+        </div>
+        <!-- couple -->
+        <div class="row couple">
+          <div class="col-lg-6" style="padding-bottom: 30px;">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h2 style="font-size: xxx-large;">Dimsum Platter</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quam tenetur placeat velit fuga dignissimos?</h4>
+                <div class="container"></div>
+                <!-- link beli -->
+      
+         
+        
+                
+              </div>
+              <div class="col-8">
+                <img src="aset/fix plater.jpeg" alt="Tuku Rene Dimsum Corner" class="img-responsive" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" style="padding-bottom: 30px";>
+            <div class="row">
+              <div class="col-8">
+                <img src="aset/fix bakar 4.jpeg" alt="Ragil sapta" class="img-responsive" />
+              </div>
+              <div class="col-4">
+                <h2 style="font-size: xxx-large;">Dimsum Platter</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quam tenetur placeat velit fuga dignissimos?</h4>
+                <div class="container"></div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- couple -->
+        <div class="row couple">
+          <div class="col-lg-6" style="padding-bottom: 30px;">
+            <div class="row">
+              <div class="col-4 text-end">
+                <h2 style="font-size: xxx-large;">Dimsum Platter</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quam tenetur placeat velit fuga dignissimos?</h4>
+                <div class="container"></div>
+                <!-- link beli -->
+      
+                
+                
+              </div>
+              <div class="col-8">
+                <img src="aset/fix goreng 8.jpeg" alt="Ragil sapta" class="img-responsive" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" style="padding-bottom: 30px";>
+            <div class="row">
+              <div class="col-8">
+                <img src="aset/MENTAI 4.JPG" alt="Ragil sapta" class="img-responsive" />
+              </div>
+              <div class="col-4">
+                <h2 style="font-size: xxx-large;">Dimsum Platter</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quam tenetur placeat velit fuga dignissimos?</h4>
+                <div class="container"></div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pemesanan -->
+    <section id="pemesanan" class="pemesanan">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- awal alamat google dan deskripsi -->
+          <div class="col-md-8 col-10 text-center">
+            <h2>PEMESANAN</h2>
+            <h3>Pesan Sekarang dengan Mudah!
+              </h3>
+
+            <!-- awal alamat -->
+            <p class="alamat">Nikmati kelezatan dimsum kami tanpa ribet! Tersedia di GrabFood, GoFood, ShopeeFood, atau pesan langsung melalui WhatsApp. Pilih cara termudah untuk menikmati hidangan favorit Anda!</p>
+              <!-- GRAB -->
+               <div>
+                 <img src="aset/GRABFOOD.png" alt="">
+                
+               </div>
+            
+              
+            <a href="https://food.grab.com/id/en/restaurant/dimsum-corner-tuku-rene-sindang-sari-delivery/6-C62BC2MAKAJ3EA?sourceID=20241125_214807_09aea94a968406ee_MEXMPS" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+            <!-- GOJEK -->
+            <div>
+              <img src="aset/GOFOOD.png" alt="">
+             
+            </div>
+            
+              
+            <a href="https://gofood.co.id/jakarta/restaurant/dimsum-corner-tuku-rene-taman-walet-3ce9823c-c193-412b-ae46-40715a49016c " target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+              <!-- SHOPEE -->
+              <div>
+                <img src="aset/SHOPEEFOOD.png" alt="">
+               
+              </div>
+           
+             
+          <a href="https://shopee.co.id/universal-link/now-food/shop/21844730?deep_and_deferred=1&shareChannel=copy_info"  target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+          <!-- WA -->
+          <div>
+            <img src="aset/wa.jpg" alt="">
+           
+          </div>
+          
+
+          <a href="https://api.whatsapp.com/message/QJHBVTUND7NOM1?autoload=1&app_absent=0" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+            <!-- akhir awal alamat -->
+            <!-- awal description -->
+            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, provident excepturi? Doloribus sit temporibus magni error nulla repellendus. Temporibus, excepturi!</p>
+            <!-- akhir description -->
+          </div>
+        </div>
+        <!-- akhir alamat google dan deskripsi -->
+        <!-- awal card -->
+        
+      </div>
+    </section>
+
+    
+
+    <!-- testimoni -->
+    <section id="testimoni" class="testimoni">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            
+            <h2>Apa Kata mereka</h2>
+            <p>Dengar langsung pengalaman pelanggan kami yang telah menikmati kelezatan dimsum Tuku Rene Dimsum Corner. Kepuasan mereka adalah inspirasi bagi kami untuk terus memberikan yang terbaik!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <!-- awal story 1 -->
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/299/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Lorem, ipsum.</h3>
+                    <span>11/11/16</span>
+                  </div>
+                  <div class="timeline-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati amet exercitationem soluta reprehenderit commodi.</div>
+                </div>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#Tentang">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link" href="#prodak">Prodak</a></li>
-              <li class="nav-item"><a class="nav-link" href="#pemesanan">Pemesanan</a></li>
-              <li class="nav-item"><a class="nav-link" href="#kritik">Kritik Dan Saran</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <svg class="bi" width="24" height="24"><use xlink:href="#cart" /></svg>
-                </a>
+              <!-- akhir story 1 -->
+              <!-- awal story 2 -->
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Lorem, ipsum.</h3>
+                    <span>11/11/16</span>
+                  </div>
+                  <div class="timeline-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati amet exercitationem soluta reprehenderit commodi.</div>
+                </div>
+              </li>
+              <!-- akhir story 2 -->
+              <!-- awal story 3 -->
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Lorem, ipsum.</h3>
+                    <span>11/11/16</span>
+                  </div>
+                  <div class="timeline-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati amet exercitationem soluta reprehenderit commodi.</div>
+                </div>
+              </li>
+              <!-- akhir story 3 -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- awal alamat google dan deskripsi -->
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Alamat Dan Kontak</h2>
+
+            <!-- awal alamat -->
+            <p class="alamat">Alamat: Perumahan Taman Walet Blok Sc17 No22, Pasar Kemis, Kab Tangerang Banten</p>
+            <p class="alamat">Nomor Telpon: 0987654321</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.85802080442255!2d106.5345834!3d-6.1489385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4201da39388877%3A0xb4dbd8a6b3635dab!2sDhira&#39;s%20Brownie%20(Toko%20kue%20brownies%2Fbrownis%2Fbronis)!5e0!3m2!1sid!2sid!4v1720423681863!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <a href="https://maps.app.goo.gl/sxUJX9TEPznMtqb76" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+            <!-- akhir awal alamat -->
+            <!-- awal description -->
+           
+            <!-- akhir description -->
+          </div>
+        </div>
+        <!-- akhir alamat google dan deskripsi -->
+        <!-- awal card -->
+        <div class="row justify-content-center mt-4">
+          <!-- card akad -->
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <!-- header card akad -->
+              <div class="card-header">Hari dan Jam Oprasional</div>
+              <!-- body card akad -->
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <!-- jam akad -->
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10:00 pagi - 09:00 malam</span>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- tanggal akad -->
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Selasa - Jumat</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Konfirmasi Jika Ingin Pick Up</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- AWAL RSVP -->
+    <section id="kritik" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>KRITIK DAN SARAN</h2>
+            
+          </div>
+        </div>
+
+       
+
+        <!-- UCAPAN -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://ragil-dhia-wedding.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIFTS -->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            
+            <h2>METODE PEMBAYARAN</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat mollitia voluptatibus architecto, repellendus cupiditate accusamus!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="d-block fw-bold">BCA</div>
+                123456 - RAGIL SAPTA
+              </li>
+              <li class="list-group-item">
+                <div class="d-block fw-bold">MANDIRI</div>
+                654321 - DHIA AYU
+              </li>
+              <li class="list-group-item">
+                <div class="d-block fw-bold">SAWERIA</div>
+                <img src="img/ragil.jpg" alt="SAWERIA QR" class="img-thmbnail" width="150" />
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- NAVBAR -->
-
-      <!-- TENTANG -->
-    <section id="Tentang" class="hero w-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black Tentang" style="height: 100vh; padding-top: 210px;" >
-        <main>
-        <div  class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
-          <div class="col-md-6 p-lg-5 mx-auto my-5">
-            <h1 class="display-3 fw-bold">TUKU RENE DIMSUM CORNER</h1>
-            <h2 class="fw-normal text-white mb-3">Jumbo Size Yummy Taste</h2>
-            <h5 class="fw-normal text-white mb-3" style="padding-bottom: 25px;">Selamat datang di Tuku Rene Dimsum Corner, pilihan terbaik untuk menikmati dimsum lezat dengan cita rasa khas! Sejak berdiri pada November 2024, kami berkomitmen menghadirkan dimsum berkualitas untuk memanjakan lidah Anda.
-
-              Kami menawarkan beragam dimsum favorit seperti dimsum kukus, bakar, saus mentai, dan goreng, semuanya dibuat dari bahan pilihan untuk menjamin rasa dan kualitas terbaik.
-              
-              Selain itu, kami juga menyediakan dimsum frozen bagi Anda yang ingin menikmatinya kapan saja atau memulai usaha sebagai reseller. Produk kami memudahkan Anda menghadirkan hidangan premium kapan pun dibutuhkan.
-              
-              Di Tuku Rene Dimsum Corner, kami percaya makanan adalah pengalaman. Mari nikmati kelezatan dimsum kami untuk melengkapi momen istimewa Anda!
-              
-              </h5>
-            <div class="d-flex gap-3 justify-content-center lead fw-normal">
-              <a class="icon-link" href="https://api.whatsapp.com/message/QJHBVTUND7NOM1?autoload=1&app_absent=0">
-                Hubungi Kami
-                <svg class="bi"><use xlink:href="#chevron-right" /></svg>
-              </a>
-              <a class="icon-link" href="https://linktr.ee/tukurenedimsumcorner">
-                linktree
-                <svg class="bi"><use xlink:href="#chevron-right" /></svg>
-              </a>
-            </div>
-          </div>      
-        </div>
-      </main>
     </section>
-      <!-- TENTANG -->
 
-      <!-- PRODAK -->
-
-      <section id="prodak" style="background-color: #ffffff; padding-top: 65px; justify-content: center">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2 style="padding-bottom: 30px;">Prodak Kami</h2>
-            </div>
-          </div>
-          <!-- PRODAK 1 -->
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="aset/BAKAR 4.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: white">Lorem, ipsum.</h4>
-                  <p class="card-text" style="color: white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, debitis.</p>
-                  <a href="https://linktr.ee/tukurenedimsumcorner" style="color: white">Pesan sekarang</a>
-                </div>
-              </div>
-            </div>
-            <!-- PRODAK 2 -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="aset/MENTAI 4.JPG" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: white">Lorem, ipsum.</h4>
-                  <p class="card-text" style="color: white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, debitis.</p>
-                  <a href="https://linktr.ee/tukurenedimsumcorner" style="color: white">Pesan sekarang</a>
-                </div>
-              </div>
-            </div>
-            <!-- PRODAK 3 -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="aset/GORENG 4.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: white">Lorem, ipsum.</h4>
-                  <p class="card-text" style="color: white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, debitis.</p>
-                  <a href="https://linktr.ee/tukurenedimsumcorner" style="color: white">Pesan sekarang</a>
-                </div>
-              </div>
-            </div>
-            <!-- PRODAK 4 -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="aset/MENTAI 16.JPG" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: white">Lorem, ipsum.</h4>
-                  <p class="card-text" style="color: white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, debitis.</p>
-                  <a href="https://linktr.ee/tukurenedimsumcorner" style="color: white">Pesan sekarang</a>
-                </div>
-              </div>
-            </div>
-            
-            
-          </div>
-        </div>
-        
-      </section>
-      <!-- akhir project -->
-  
-      <!-- sertifikat -->
-      <section id="training" style="background-color:  #2ca4bf; padding-top: 65px; justify-content: center">
-        <div class="container">
-          <div class="row text-center mb-3">
-            <div class="col">
-              <h2 style="color: white; padding-bottom: 30px;">Training</h2>
-            </div>
-          </div>
-          <!-- cpkb -->
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="asset/sertifikat/cpkb.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: black">CPKB</h4>
-                  
-                  <a href="project1.html" style="color: black">Lihat project</a>
-                </div>
-              </div>
-            </div>
-            <!-- 5r -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="asset/sertifikat/5r.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: black">5R</h4>
-                  
-                  <a href="project2.html" style="color: black">Lihat project</a>
-                </div>
-              </div>
-            </div>
-            <!-- k3 -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="asset/sertifikat/k3.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: black">K3</h4>
-                 
-                  <a href="project2.html" style="color: black">Lihat project</a>
-                </div>
-              </div>
-            </div>
-            <!-- HALAL -->
-            <div class="col-md-4 mb-3">
-              <div class="card" style="background-color: #bfbfbf" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="asset/sertifikat/halal.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h4 class="card-text" style="color: black">Halal</h4>
-                  
-                  <a href="project2.html" style="color: black">Lihat project</a>
-                </div>
-              </div>
-            </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#bfbfbf"
-            fill-opacity="1"
-            d="M0,288L0,288L96,288L96,160L192,160L192,0L288,0L288,64L384,64L384,160L480,160L480,128L576,128L576,160L672,160L672,224L768,224L768,64L864,64L864,32L960,32L960,192L1056,192L1056,224L1152,224L1152,96L1248,96L1248,64L1344,64L1344,32L1440,32L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"
-          ></path>
-        </svg>
-      </section>
-      <!-- sertifikat -->
-  
-      <!-- project -->
-      <section id="project" style="background-color: #bfbfbf; padding-top: 65px; justify-content: center">
-        
-        
-      </section>
-       
-      <!-- PRODAK -->
-
-      <!-- KRITIK DAN SARAN -->
-    <section id="kritik" class="rsvp">
-       
-          <div class="row justify-content-center mt-5">
-            <div class="col-md-6">
-              <div id="disqus_thread">
-
-              </div>
-              <script>
-                 (function () {
-                  // DON'T EDIT BELOW THIS LINE
-                  var d = document,
-                    s = d.createElement("script");
-                  s.src = "https://ragil-dhia-wedding.disqus.com/embed.js";
-                  s.setAttribute("data-timestamp", +new Date());
-                  (d.head || d.body).appendChild(s);
-                })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </div>
-          </div>
-        </div>
-    </section>
-      <!-- Kritik dan saran -->
-
-      
-
-    <footer class="container py-5">
+    <!-- FOOTER -->
+    <footer>
+      <div class="container"></div>
       <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
-            <title>Product</title>
-            <circle cx="12" cy="12" r="10" />
-            <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-          </svg>
-          <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+        <div class="col text-center">
+          <small class="block">&copy; 2024 tuku rene dimsum corner. All right reservd</small>
+          <small class="block">Design by <a href="https:// instagram">ragil weding</a></small>
+
+          <ul class="mt-3">
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JAVA SCRIPT -->
-    <!-- BOOTSTRAP -->
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/sucat.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT BOOT STRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- LIGHT BOX -->
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-
-    <!-- SIMPLY COUNT DOWN -->
+    <!-- SCRIPT COUNT DOWN -->
     <script>
       simplyCountdown(".simply-countdown", {
         year: 2024, // required
@@ -462,6 +466,86 @@
       offcanvas.addEventListener("hidden.bs.offcanvas", function () {
         stickyTop.style.overflow = "hidden";
       });
+    </script>
+
+    <!-- SCROLING -->
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollTop;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem("opened", "true");
+        playAudio();
+      }
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+      // AUDIO
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
+      disableScroll();
+    </script>
+
+    <!-- NOTIF KEHADIRAN -->
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi Kehadiran Berhasil Terkirim");
+          });
+        });
+      });
+    </script>
+
+    <!--  PENERIMA -->
+    <!-- catatan bila ingin menambahkan pronoun dan nama tambahkan text ini di link paling blakang p=bapak&nama=pedut "p=PRONOUN&nama=NAMA ORANGNYA" -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("nama") || "";
+      const pronoun = urlParams.get("p") || "Kak";
+
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
     </script>
   </body>
 </html>
